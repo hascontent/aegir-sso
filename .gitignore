@@ -41,4 +41,4 @@ web/sites/simpletest
 # Ignore SimpleTest multi-site environment.
 # simpletest
 
-*/.DS_Store
+.DS_Store
