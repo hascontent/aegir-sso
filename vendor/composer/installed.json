@@ -659,6 +659,82 @@
         ]
     },
     {
+        "name": "drupal/cas",
+        "version": "1.6.0",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/cas.git",
+            "reference": "8.x-1.6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/cas-8.x-1.6.zip",
+            "reference": "8.x-1.6",
+            "shasum": "f41e191759a99ad67ff433622c9588ed0d87bf57"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "drupal/externalauth": "^1.2"
+        },
+        "require-dev": {
+            "drupal/cas_mock_server": "dev-0.x"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.6",
+                "datestamp": "1578260883",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            },
+            "drush": {
+                "services": {
+                    "drush.services.yml": "^9"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "David Metzler",
+                "homepage": "https://www.drupal.org/u/metzlerd",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Brian Osborne",
+                "homepage": "https://www.drupal.org/u/bkosborne",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Tim Yale",
+                "homepage": "https://www.drupal.org/u/yalet",
+                "role": "Maintainer"
+            },
+            {
+                "name": "See other contributors",
+                "homepage": "https://www.drupal.org/node/78967/committers",
+                "role": "contributor"
+            }
+        ],
+        "description": "Provides CAS authentication for Drupal.",
+        "homepage": "http://drupal.org/project/cas",
+        "support": {
+            "source": "http://cgit.drupalcode.org/cas",
+            "issues": "http://drupal.org/project/issues/cas",
+            "irc": "irc://irc.freenode.org/drupal-contribute"
+        }
+    },
+    {
         "name": "drupal/core",
         "version": "8.8.1",
         "version_normalized": "8.8.1.0",
@@ -1059,6 +1135,63 @@
             "GPL-2.0-or-later"
         ],
         "description": "Locked core dependencies; require this project INSTEAD OF drupal/core."
+    },
+    {
+        "name": "drupal/externalauth",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/externalauth.git",
+            "reference": "8.x-1.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/externalauth-8.x-1.2.zip",
+            "reference": "8.x-1.2",
+            "shasum": "957cf6e8033c192d7a20379869298063058cff7b"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.2",
+                "datestamp": "1569916976",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "rgristroph",
+                "homepage": "https://www.drupal.org/user/516442"
+            },
+            {
+                "name": "snufkin",
+                "homepage": "https://www.drupal.org/user/58645"
+            },
+            {
+                "name": "svendecabooter",
+                "homepage": "https://www.drupal.org/user/35369"
+            }
+        ],
+        "description": "Helper module to authenticate users using an external site / service and storing identification details",
+        "homepage": "https://www.drupal.org/project/externalauth",
+        "support": {
+            "source": "https://git.drupalcode.org/project/externalauth"
+        }
     },
     {
         "name": "easyrdf/easyrdf",
@@ -3526,7 +3659,8 @@
             "http",
             "psr",
             "psr-7"
-        ]
+        ],
+        "abandoned": "laminas/laminas-diactoros"
     },
     {
         "name": "zendframework/zend-escaper",
@@ -3573,7 +3707,8 @@
             "ZendFramework",
             "escaper",
             "zf"
-        ]
+        ],
+        "abandoned": "laminas/laminas-escaper"
     },
     {
         "name": "zendframework/zend-feed",
@@ -3638,7 +3773,8 @@
             "ZendFramework",
             "feed",
             "zf"
-        ]
+        ],
+        "abandoned": "laminas/laminas-feed"
     },
     {
         "name": "zendframework/zend-stdlib",
@@ -3686,6 +3822,7 @@
             "ZendFramework",
             "stdlib",
             "zf"
-        ]
+        ],
+        "abandoned": "laminas/laminas-stdlib"
     }
 ]
